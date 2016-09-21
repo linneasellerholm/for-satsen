@@ -9,7 +9,7 @@ namespace for_satsen
     class Program
     {
         static void Main(string[] args)
-        {
+        {/*
             //Övning 1
             for (int x = 0; x < 101; x++)
             {
@@ -29,6 +29,80 @@ namespace for_satsen
                 Console.WriteLine(i);
             }
             Console.ReadKey();
+            
+
+            //Övning 1
+            Console.Write("Mata in start:");
+            int start = int.Parse(Console.ReadLine());
+            Console.Write("Mata in stop:");
+            int stopp = int.Parse(Console.ReadLine());
+            Console.Write("Mata in steg:");
+            int steg = int.Parse(Console.ReadLine());
+
+            var x = start;
+            var y = stopp;
+            var z = steg;
+
+            for (start=x; x < y; x = x + z) 
+            {
+                Console.WriteLine(x); 
+
+            //Övning 3
+            Console.Write("Mata in ett heltal:");
+            int tal = int.Parse(Console.ReadLine());
+
+            var summa = 0;
+
+            for (int x = 0; x <= tal; x++)
+            {
+                summa = summa + x;
+                if (x==tal)
+                {
+                    Console.WriteLine(summa);
+                }
+                
+            }
+            //Övning 4
+            Console.Write("Mata in ett heltal:");
+            int tal = int.Parse(Console.ReadLine());
+
+            var x = 1;
+
+            if (tal < 21)
+                Console.WriteLine("Hittade inga tal");
+
+            else
+            {
+                for (int y = tal; x <= tal; x++)
+                {
+                    if (x % 7 == 0 && x % 3 == 0)
+                    {
+                        Console.WriteLine("Talet " + x + " är delbart med både 3 och 7");
+                    }
+                }
+          
+            }
+            */
+            //Övning 5
+            Console.Write("Mata in ett tal:");
+            int max = int.Parse(Console.ReadLine());
+
+            int x = 0;
+            int y = 1;
+            int z = x + y;
+            int heltal = 0;
+
+            for (int x = 0; antal < max; heltal++)
+            {
+                Console.WriteLine(z);
+                x = y;
+                y = z;
+            }
+
+
+
+
+            
         }
     }
 }
