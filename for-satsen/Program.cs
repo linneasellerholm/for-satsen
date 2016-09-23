@@ -84,21 +84,7 @@ namespace for_satsen
             }
             */
             //Övning 5
-            Console.Write("Mata in ett tal:");
-            int max = int.Parse(Console.ReadLine());
-
-            int x = 0;
-            int y = 1;
-            int z = x + y;
-            int heltal = 0;
-
-            for (int x = 0; antal < max; heltal++)
-            {
-                Console.WriteLine(z);
-                x = y;
-                y = z;
-            }
-
+            //fibonacci här
 
 
 
