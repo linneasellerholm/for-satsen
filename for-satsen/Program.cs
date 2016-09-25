@@ -82,13 +82,57 @@ namespace for_satsen
                 }
           
             }
-            */
-            //Övning 5
-            //fibonacci här
-
-
-
             
-        }
+            //Övning 5
+            Console.Write("Mata in hur många tal i Fibonaccis talföljd du vill se: ");
+            int antal = int.Parse(Console.ReadLine());
+
+            var a = 0;
+            var b = 1;
+            if (antal == 0)
+                Console.WriteLine("?");
+            else
+            {
+                Console.WriteLine("1");
+                for (int x = 0; x < antal - 1; x++)
+                {
+                    var c = a + b;
+                    Console.WriteLine(c);
+                    a = b;
+                    b = c;
+
+                }
+            }
+            Console.ReadKey();
+            
+            //Övning 6
+
+            Console.Write("Mata in ett tal: ");
+            int tal = int.Parse(Console.ReadLine());
+            for (double x = 0; x < tal; x = x+0.1)
+            {
+                if (x * x * x >= tal) //GER KUBIKROT AV 125 = 5.1 (???)
+                {
+                    Console.WriteLine(x);
+                    break;
+                }
+            }
+            Console.ReadKey();
+            */
+            //Övning 7
+
+            Console.Write("Ange ett tal som ska undersökas: ");
+            int tal = int.Parse(Console.ReadLine());
+            for (int i = 2; i < tal; i++)
+            {
+                if (tal % i == 0)
+                {
+                    Console.WriteLine("Inte ett primtal");
+                    break;
+                }
+            } //FIXA SÅ ATT SKRIVER UT NÄR PRIMTAL
+            
+        
+    }
     }
 }
